@@ -1,16 +1,21 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Mission from "./components/Mission";
-import Help from "./components/Help"
-import Carousel from "./components/Carousel";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import List from "./Pages/List"
+import Donate from "./Pages/Donate"
+
 
 function App() {
   return (
     <>
-      <Header />
-      <Help />
-      <Mission />
-      <Footer />
+      <Router>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/donate" element={<Donate />} />
+        </Routes>
+      </Router>
     </>
   );
 }
