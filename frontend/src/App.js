@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <Header />
-      <Carousel />
       <Help />
       <Mission />
       <Footer />
