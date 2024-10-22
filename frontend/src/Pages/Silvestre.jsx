@@ -1,17 +1,17 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TimeLine from "../components/TImeLine";
 
 
-function About() {
+function Silvestre() {
     return (
         <>
             <Header />
-            <br /><br /><br /><br />
-            <h1>Sobre</h1>
+            <TimeLine />
             <Footer />
             
         </>
     );
 }
 
-export default About;
+export default Silvestre;
