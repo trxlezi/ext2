@@ -10,7 +10,7 @@
 
 .title {
     font-size: 36px;
-    color: #ffffff; /* Cor alaranjada */
+    color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -31,12 +31,12 @@
 .summary {
     cursor: pointer;
     font-size: 18px;
-    color: #ffffff; /* Cor alaranjada */
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .summary:hover {
-    color: #a18174; /* Cor mais clara ao passar o mouse */
+    color: #a18174;
 }
 
 .detail {
