@@ -11,8 +11,10 @@
     margin-top: 5rem;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff5722;
+    color: #ffffff;
     text-align: center;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 .event {
@@ -33,7 +35,8 @@
 .year {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ff5722;
+    color: #ffffff;
+    text-shadow: 2px 1px black;
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -54,7 +57,7 @@
 .link {
     background: none;
     border: none;
-    color: #ff5722;
+    color: #007e00;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
