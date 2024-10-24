@@ -4,13 +4,15 @@ import Mission from "../components/Mission";
 import Help from "../components/Help"
 import Faq from "../components/Faq"
 import About from "../components/About";
+import Donate from "../components/Donate";
 
 function Home() {
   return (
     <>
       <Header />
       <About />
-      <Help />
+      <Donate />
+      {/* <Help /> */}
       <Mission />
       <Faq />
       <Footer />

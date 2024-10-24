@@ -32,9 +32,12 @@ function TimeLine() {
     return (
         <div className={styles.timeline}>
             <h1 className={styles.title}>Linha do Tempo da ONGÓTICOS</h1>
-            {timelineData.map((event, index) => (
-                <TimelineEvent key={index} event={event} />
-            ))}
+            <div className="block">
+                {timelineData.map((event, index) => (
+                    <TimelineEvent key={index} event={event} />
+                ))}
+            </div>
+
         </div>
     );
 }

@@ -1,0 +1,55 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.headerContainer {
+    margin-bottom: 20px;
+}
+
+.header {
+    font-size: 2em;
+}
+
+.intro {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 0px;  /* Remove border-radius for square shape */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    height: 250px;  /* Square shape */
+    width: 250px;   /* Square shape */
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.qrCode {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
