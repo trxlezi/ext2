@@ -1,0 +1,81 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.mainHeader {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.imageContainer {
+    flex: 1;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.faqs {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.faqItem {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.question {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.question:hover {
+    background-color: #f0f0f0;
+}
+
+.answer {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.donateButton {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #38b000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donateButton:hover {
+    background-color: #2a9d00;
+}
