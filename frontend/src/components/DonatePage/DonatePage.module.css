@@ -1,5 +1,5 @@
 .container {
-    padding: 20px;
+    padding: 60px 20px 20px 20px;
     text-align: center;
 }
 
@@ -31,13 +31,21 @@
 .card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 0px;  /* Remove border-radius for square shape */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0px;
+    /* Remove border-radius for square shape */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
     flex: 1;
-    height: 250px;  /* Square shape */
-    width: 250px;   /* Square shape */
+    height: 250px;
+    /* Square shape */
+    width: 250px;
+    /* Square shape */
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px 6px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
