@@ -50,3 +50,59 @@
   height: auto;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .missionSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .textContainer {
+    max-width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .contributeButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textContainer {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .contributeButton {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+  }
+}

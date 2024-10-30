@@ -69,3 +69,45 @@
 .link:hover {
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem; 
+    }
+
+    .event {
+        width: 80vw; 
+        flex-basis: 80%; 
+    }
+
+    .year {
+        font-size: 1.25rem;
+    }
+
+    .eventTitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .event {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    .year {
+        font-size: 1rem;
+    }
+
+    .eventTitle {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}

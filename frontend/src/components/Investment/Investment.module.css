@@ -66,3 +66,65 @@
 .donateButton:hover {
     background-color: #2a9d00;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 0px 15px 30px 15px;
+    }
+
+    .mainHeader {
+        font-size: 2em;
+    }
+
+    .question {
+        font-size: 1.1em;
+    }
+
+    .question h2 {
+        width: auto;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .answer {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0px 10px 20px 10px;
+    }
+
+    .mainHeader {
+        font-size: 1.8em;
+    }
+
+    .faqItem {
+        margin-bottom: 8px;
+    }
+
+    .question {
+        font-size: 1em;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .question h2 {
+        font-size: 1em;
+        width: auto;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .answer {
+        font-size: 0.9em;
+    }
+
+    .donateButton {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
