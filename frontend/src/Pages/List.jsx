@@ -1,13 +1,13 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import GridContainer from "../components/GridContainer/GridContainer";
 
 function List() {
     return (
         <>
             <Header />
             <br /><br /><br /><br />
-            <h1>Lista</h1>
+            <GridContainer />
             <Footer />
         </>
     );
