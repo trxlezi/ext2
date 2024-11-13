@@ -1,18 +1,24 @@
 .section {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #000;
+    background-image: url(../../assets/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
 .content {
+    margin-top: 30px;
     max-width: 50%;
 }
 
 .title {
-    font-size: 48px;
+    font-family: 'Amatic SC';
+    font-size: 60px;
     color: #f4f4f4;
     margin-bottom: 20px;
 }
@@ -22,16 +28,6 @@
     line-height: 1.6;
     margin-bottom: 20px;
     color: #ddd;
-}
-
-.link {
-    color: #4CAF50;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.link:hover {
-    text-decoration: underline;
 }
 
 .media {
@@ -45,14 +41,84 @@
 }
 
 .link {
-    color: #a89b5b;
+    font-family: 'Montserrat', sans-serif;
+    color: #5d995b;
     cursor: pointer;
     border: none;
     background: none;
     font-size: 16px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .link:hover {
-    color: #87887b;
+    color: #3b5f39;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .media {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+
+    .link {
+        font-size: 12px;
+    }
+}
+
+.media {
+    max-width: 45%;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.link {
+    font-family: 'Montserrat', sans-serif;
+    color: #5d995b;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #3b5f39;
+    text-decoration: underline;
 }

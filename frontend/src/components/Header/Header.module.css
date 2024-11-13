@@ -1,8 +1,6 @@
 .header {
-    background-color: #EBB000;
-    border-bottom: 2px solid #000000;
+    background-color: #00690e;
     position: fixed;
-    top: 0;
     width: 100%;
     display: flex;
     padding: 0.75rem;
@@ -10,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 9;
+    box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.25);
 }
 
 .header span {
@@ -23,7 +22,57 @@
 }
 
 .header a {
+    font-size: 1.2rem;
     text-decoration: none;
     color: #fff;
     padding-inline: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .header span {
+        font-size: 1.6rem;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .header .menu-icon {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+/*  era pra ser um botão que quando clica aparece o menu */
+.menu-icon {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #00690e;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 1rem;
+}
+
+.nav-menu a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
 }

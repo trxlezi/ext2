@@ -1,48 +1,55 @@
 .timeline {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens no eixo horizontal */
-    margin: 20px;
+    align-items: center;
+    background-image: url('../../assets/5590.jpg');
+    width: 100vw;
+    padding: 20px;
 }
 
 .title {
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 4rem;
+    font-family: 'Amatic SC', sans-serif;
     margin-bottom: 20px;
-    color: #ff5722; /* Alaranjado */
-    text-align: center; /* Centraliza o texto do título */
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.438);
+    color: #ffffff;
+    text-align: center;
 }
 
 .event {
-    display: flex;
-    flex-direction: column; /* Coloca os detalhes em coluna */
-    align-items: center; /* Centraliza os detalhes */
-    margin: 15px 0;
-    border-left: 2px solid #ff5722; /* Alaranjado */
-    padding: 10px 0; /* Adiciona espaço ao redor do evento */
-    width: 80%; /* Ajuste a largura se necessário */
-    transition: background-color 0.3s;
+    flex-basis: 45%;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #003f08;
+    border-radius: 10px;
+    text-align: center;
+    width: 50vw;
+    background-color: #00b6189c;
 }
 
 .event:hover {
-    background-color: rgba(255, 87, 34, 0.1); /* Leve fundo alaranjado ao passar o mouse */
+    background-color: rgba(120, 226, 93, 0.5);
 }
 
 .year {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ff5722; /* Alaranjado */
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
     cursor: pointer;
-    margin-bottom: 10px; /* Espaçamento abaixo do ano */
+    margin-bottom: 5px;
 }
 
 .details {
-    text-align: center; /* Centraliza os detalhes do evento */
+    text-align: center;
+
 }
 
 .eventTitle {
     font-size: 1.25rem;
     margin: 0;
+    margin-bottom: 5px;
 }
 
 .description {
@@ -52,12 +59,55 @@
 .link {
     background: none;
     border: none;
-    color: #ff5722; /* Alaranjado */
+    color: #005c00;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .link:hover {
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem; 
+    }
+
+    .event {
+        width: 80vw; 
+        flex-basis: 80%; 
+    }
+
+    .year {
+        font-size: 1.25rem;
+    }
+
+    .eventTitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .event {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    .year {
+        font-size: 1rem;
+    }
+
+    .eventTitle {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
 }

@@ -1,13 +1,17 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import DonatePage from "../components/DonatePage";
+import ImpactPage from "../components/Impact";
+import Investment from "../components/Investment";
 
 
 function Donate() {
     return (
         <>
             <Header />
-            <br /><br /><br /><br />
-            <h1>Doacoes</h1>
+            <DonatePage />
+            <ImpactPage />
+            <Investment />
             <Footer />
         </>
     );
