@@ -1,15 +1,15 @@
 import React from 'react';
 import './CardAnimals.css';
 
-function CardAnimals({ name, species, age, careDuration }) {
+function CardAnimals({ name, species, age, careDuration, image }) {
   return (
     <div className="card">
-      <img src={`images/${name.toLowerCase()}.jpg`} alt={`${name} - ${species}`} />
+      <img src={image} alt={`${name} - ${species}`} />
       <div className="card-info">
-        <h3>{name}</h3>
-        <p>Espécie: {species}</p>
-        <p>Idade: {age}</p>
-        <p>Período em cuidados: {careDuration}</p>
+        <h3>{name.toUpperCase()}</h3>
+        <p>Espécie: {species.toUpperCase()}</p>
+        <p>Idade: {age} ANOS</p>
+        <p>Período em cuidados: {careDuration} MESES</p>
       </div>
     </div>
   );

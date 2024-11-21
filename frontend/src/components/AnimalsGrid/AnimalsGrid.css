@@ -1,0 +1,11 @@
+body{
+  background-color: #eafaf1; /* Fundo claro para contraste */
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards "quebrem" linha, caso não caibam */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 1.5rem; /* Espaçamento entre os cards */
+  padding: 1rem;
+}
