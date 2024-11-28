@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardAnimals.css';
+import './CardAnimals.module.css';
 
 function CardAnimals({ name, species, age, careDuration, image }) {
   return (

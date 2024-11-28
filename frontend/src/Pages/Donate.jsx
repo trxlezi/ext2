@@ -1,13 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import DoacaoSection from "../components/DoacaoSection/DoacaoSection";
 
 function Donate() {
     return (
         <>
             <Header />
-            <br /><br /><br /><br />
-            <h1>Doacoes</h1>
+            <DoacaoSection />
             <Footer />
         </>
     );

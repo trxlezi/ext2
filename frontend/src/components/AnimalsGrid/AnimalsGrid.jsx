@@ -1,6 +1,6 @@
 import React from 'react';
 import CardAnimals from '../CardAnimals/CardAnimals';
-import './AnimalsGrid.css';
+import './AnimalsGrid.module.css';
 import lolaImg from '../../assets/lola.jpg'
 import bobImg from '../../assets/bob.jpg'
 import miaImg from '../../assets/mia.jpg'
