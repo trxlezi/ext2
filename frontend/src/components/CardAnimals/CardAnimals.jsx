@@ -1,15 +1,18 @@
 import React from 'react';
-import './CardAnimals.module.css';
+import styles from './CardAnimals.module.css';
 
-function CardAnimals({ name, species, age, careDuration, image }) {
+function CardAnimals({ image, name, species, age, careDuration }) {
   return (
-    <div className="card">
+    <div className={styles.card}>
       <img src={image} alt={`${name} - ${species}`} />
-      <div className="card-info">
-        <h3>{name.toUpperCase()}</h3>
-        <p>Espécie: {species.toUpperCase()}</p>
-        <p>Idade: {age} ANOS</p>
-        <p>Período em cuidados: {careDuration} MESES</p>
+      <div className={styles.cardContent}>
+        <h3>{name}</h3>
+        <p>Espécie: {species}</p>
+        <p>Idade: {age} anos</p>
+        <p>Tempo de cuidado: {careDuration} meses</p>
+        <a href="#" className={styles.button}>
+          Saiba mais
+        </a>
       </div>
     </div>
   );
